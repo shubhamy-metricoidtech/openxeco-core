@@ -116,13 +116,13 @@ $ docker build \
     -f openxeco-core-oxe-web-admin/Dockerfile \
     -t oxe-web-admin \
     --build-arg TARGET_DIR=openxeco-core-oxe-web-admin \
-    https://github.com/CybersecurityLuxembourg/openxeco-core/releases/latest/download/openxeco-core-oxe-web-admin.tar.gz
+    https://github.com/shubhamy-metricoidtech/openxeco-core/releases/latest/download/openxeco-core-oxe-web-admin.tar.gz
 $ docker run -d -p 3000:80 oxe-web-admin
 $ docker build \
     -f openxeco-core-oxe-web-community/Dockerfile \
     -t oxe-web-community \
     --build-arg TARGET_DIR=openxeco-core-oxe-web-community \
-    https://github.com/CybersecurityLuxembourg/openxeco-core/releases/latest/download/openxeco-core-oxe-web-community.tar.gz
+    https://github.com/shubhamy-metricoidtech/openxeco-core/releases/latest/download/openxeco-core-oxe-web-community.tar.gz
 $ docker run -d -p 3001:80 oxe-web-community
 $ docker run -d -p 5000:5000 \
     --network openxeco \

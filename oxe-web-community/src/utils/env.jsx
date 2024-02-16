@@ -2,14 +2,14 @@ export function getApiURL() {
 	if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" || window.location.hostname === "") {
 		return "http://localhost:5000/";
 	}
-	return "https://api." + window.location.hostname.replace("www.", "").split(".").slice(1).join(".") + "/";
+	return "https://openxecoapi.jenusplanet.com/";
 }
 
 export function getGlobalAppURL() {
 	if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" || window.location.hostname === "") {
 		return "http://localhost:3002/";
 	}
-	return "https://" + window.location.hostname.replace("www.", "").split(".").slice(1).join(".") + "/";
+	return "https://openxecoapi.jenusplanet.com/";
 }
 
 export function getCookieOptions() {
@@ -18,7 +18,7 @@ export function getCookieOptions() {
 	}
 	return {
 		secure: true,
-		domain: "." + window.location.hostname.replace("www.", "").split(".").slice(1).join("."),
+		domain: "https://openxecoapi.jenusplanet.com",
 		path: "/",
 	};
 }

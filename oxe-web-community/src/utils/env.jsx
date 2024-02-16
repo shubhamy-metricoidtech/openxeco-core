@@ -21,6 +21,7 @@ export function getCookieOptions() {
 		domain: "https://openxecoapi.jenusplanet.com",
 		path: "/",
 	};
+
 }
 
 export function isInternetExplorer() {

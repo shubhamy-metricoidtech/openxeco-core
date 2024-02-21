@@ -144,7 +144,7 @@ $ $ docker run -d -p 5000:5000 \
     -e IMAGE_FOLDER=/image_folder \
     -e DOCUMENT_FOLDER=/document_folder \
     -e INITIAL_ADMIN_EMAIL=my-default-admin@example.org \
-    -e BASE_DOMAIN=openxecocommunity.jenusplanet.com
+    -e BASE_DOMAIN=jenusplanet.com
     -e CORS_DOMAINS=jenusplanet.com
     ghcr.io/cybersecurityluxembourg/openxeco-core-oxe-api:latest
 ```

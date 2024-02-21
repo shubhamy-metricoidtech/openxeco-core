@@ -124,23 +124,28 @@ $ docker build \
     --build-arg TARGET_DIR=openxeco-core-oxe-web-community \
     https://github.com/shubhamy-metricoidtech/openxeco-core/releases/latest/download/openxeco-core-oxe-web-community.tar.gz
 $ docker run -d -p 3001:80 oxe-web-community
-$ docker run -d -p 5000:5000 \
+$ $ docker run -d -p 5000:5000 \
     --network openxeco \
-    -e ENVIRONMENT=dev \
+    -e ENVIRONMENT=prod \
     -e JWT_SECRET_KEY=my_secret_developer_key \
     -e DB_HOSTNAME=mariadb \
     -e DB_PORT=3306 \
     -e DB_NAME=OPENXECO \
     -e DB_USERNAME=root \
     -e DB_PASSWORD=E4syPass \
-    -e MAIL_SERVER=smtp \
-    -e MAIL_PORT=1025 \
-    -e MAIL_USE_TLS=True \
-    -e MAIL_USE_SSL=False \
-    -e MAIL_DEFAULT_SENDER=my-default-sender@example.org \
+    -e MAIL_SERVER=smtp.gmail.com \
+    -e MAIL_PORT=465 \
+    -e MAIL_USE_TLS=False \
+    -e MAIL_USE_SSL=True \
+    -e MAIL_USERNAME=jenusskportal@gmail.com \
+    -e MAIL_PASSWORD=rtidixbesicqqbek \
+    -e MAIL_DEFAULT_SENDER=jenusskportal@gmail.com \
+    -e MAIL_REPLY_TO=jenusskportal@gmail.com \
     -e IMAGE_FOLDER=/image_folder \
     -e DOCUMENT_FOLDER=/document_folder \
-    -e INITIAL_ADMIN_EMAIL=admin@localhost.localdomain \
+    -e INITIAL_ADMIN_EMAIL=my-default-admin@example.org \
+    -e BASE_DOMAIN=openxecocommunity.jenusplanet.com
+    -e CORS_DOMAINS=jenusplanet.com
     ghcr.io/cybersecurityluxembourg/openxeco-core-oxe-api:latest
 ```
 

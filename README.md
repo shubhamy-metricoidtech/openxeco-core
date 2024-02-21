@@ -124,7 +124,7 @@ $ docker build \
     --build-arg TARGET_DIR=openxeco-core-oxe-web-community \
     https://github.com/shubhamy-metricoidtech/openxeco-core/releases/latest/download/openxeco-core-oxe-web-community.tar.gz
 $ docker run -d -p 3001:80 oxe-web-community
-$ $ docker run -d -p 5000:5000 \
+$ docker run -d -p 5000:5000 \
     --network openxeco \
     -e ENVIRONMENT=prod \
     -e JWT_SECRET_KEY=my_secret_developer_key \

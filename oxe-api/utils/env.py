@@ -10,4 +10,4 @@ def get_admin_portal_url():
 def get_community_portal_url():
     if ENVIRONMENT == "dev":
         return "http://localhost:3000"
-    return "".join(["https://community.", BASE_DOMAIN])
+    return "".join(["https://", BASE_DOMAIN])

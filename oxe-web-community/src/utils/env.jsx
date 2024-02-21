@@ -9,7 +9,7 @@ export function getGlobalAppURL() {
 	if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" || window.location.hostname === "") {
 		return "http://localhost:3002/";
 	}
-	return "https://openxecoapi.jenusplanet.com/";
+	return "https://openxecoportal.jenusplanet.com/";
 }
 
 export function getCookieOptions() {

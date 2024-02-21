@@ -146,7 +146,7 @@ $ $ docker run -d -p 5000:5000 \
     -e INITIAL_ADMIN_EMAIL=my-default-admin@example.org \
     -e BASE_DOMAIN=jenusplanet.com
     -e CORS_DOMAINS=jenusplanet.com
-    ghcr.io/cybersecurityluxembourg/openxeco-core-oxe-api:latest
+    ghcr.io/shubhamy-metricoidtech/openxeco-core-oxe-api:latest
 ```
 
 ### Enjoy the solution

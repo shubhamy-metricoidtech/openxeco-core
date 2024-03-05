@@ -2,7 +2,7 @@ export function getApiURL() {
 	if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" || window.location.hostname === "") {
 		return "http://localhost:5000/";
 	}
-	return "https://openxecoapi.jenusplanet.com/";
+	return "https://communityapi.ncc.cy/";
 }
 
 export function getCookieOptions() {
@@ -11,7 +11,7 @@ export function getCookieOptions() {
 	}
 	return {
 		secure: true,
-		domain: "https://openxecoapi.jenusplanet.com",
+		domain: "https://communityapi.ncc.cy",
 		path: "/",
 	};
 }
